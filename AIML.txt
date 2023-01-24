@@ -1,0 +1,12 @@
+import numpy as np
+from sklearn.datasets import load_boston
+from sklearn.model_selection import train_test_split
+
+boston_dataset=load_boston()
+x=boston_dataset.data
+y=boston_dataset.target
+
+x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2,random_state=42)
+
+x_test.shape[0]
+
